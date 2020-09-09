@@ -1,7 +1,5 @@
 package com.alexapp;
 
-import java.io.IOException;
-
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
@@ -32,10 +30,11 @@ public class RegistrationPageController {
     private Button loginButton;
 
     @FXML
-    private void loginButtonAction() {
+    private void initialize() {
+        //Changing root scene on "loginPage", when you click  "loginButton"
         loginButton.setOnAction(actionEvent -> {
             System.out.println("Hello login page");
-            App.setRoot("loginPage");
+            WeatherApp.setRoot("loginPage");
         });
     }
 }

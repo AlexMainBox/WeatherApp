@@ -10,9 +10,13 @@ import java.io.IOException;
 /**
  * Weather App
  */
-public class App extends Application {
+public class WeatherApp extends Application {
 
-    private static Scene scene;
+    private static  Scene scene;
+
+//     protected static Scene getScene() {
+//        return scene;
+//    }
 
     @Override
     public void start(Stage stage) {
@@ -22,8 +26,10 @@ public class App extends Application {
             e.printStackTrace();
         }
         stage.setTitle("Weather App");
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+
     }
 
     static void setRoot(String fxml)  {

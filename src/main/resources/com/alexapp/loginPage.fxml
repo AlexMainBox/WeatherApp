@@ -17,7 +17,7 @@
             <Font size="17.0" />
          </font>
       </PasswordField>
-      <Button fx:id="singUpButton" layoutX="647.0" layoutY="23.0" mnemonicParsing="false" onAction="#singUpButtonAction" style="-fx-background-color: #151928; -fx-border-color: #9e9999;" text="SignUp" textFill="#c9c4c4">
+      <Button fx:id="singUpButton" layoutX="647.0" layoutY="23.0" mnemonicParsing="false"  style="-fx-background-color: #151928; -fx-border-color: #9e9999;" text="SignUp" textFill="#c9c4c4">
          <font>
             <Font size="17.0" />
          </font>

@@ -33,6 +33,6 @@
          </font>
       </Label>
       <Button fx:id="singUpButton" layoutX="276.0" layoutY="416.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #2196f3;" text="Sing UP" />
-      <Button fx:id="loginButton" layoutX="664.0" layoutY="17.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="32.0" prefWidth="72.0" style="-fx-background-color: #2D3447; -fx-border-color: #fff;" text="Login" textFill="WHITE" />
+      <Button fx:id="loginButton" layoutX="664.0" layoutY="17.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="72.0" style="-fx-background-color: #2D3447; -fx-border-color: #fff;" text="Login" textFill="WHITE" />
    </children>
 </AnchorPane>
