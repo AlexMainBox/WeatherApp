@@ -1,5 +1,6 @@
-package com.alexapp;
+package com.alexapp.Controllers;
 
+import com.alexapp.Utils.SetRootPage;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
@@ -21,16 +22,16 @@ public class LoginPageController {
     private TextField emailTextField;
 
     @FXML
-    void initialize(){
+    void initialize() {
 //        Changing root scene on "registrationPage", when you click  "singUpButton".
         singUpButton.setOnAction(actionEvent -> {
             System.out.println("Hello registration page");
-            WeatherApp.setRoot("registrationPage");
+            SetRootPage.setRoot("registrationPage");
         });
-
+//        Changing root scene on "userPage", when you click  "loginButton".
         loginButton.setOnAction(actionEvent -> {
             System.out.println("Hello user page");
-            WeatherApp.setRoot("userPage");
+            SetRootPage.setRoot("userPage");
         });
 
     }

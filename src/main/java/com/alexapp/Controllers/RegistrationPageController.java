@@ -1,5 +1,6 @@
-package com.alexapp;
+package com.alexapp.Controllers;
 
+import com.alexapp.Utils.SetRootPage;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
@@ -34,7 +35,7 @@ public class RegistrationPageController {
         //Changing root scene on "loginPage", when you click  "loginButton"
         loginButton.setOnAction(actionEvent -> {
             System.out.println("Hello login page");
-            WeatherApp.setRoot("loginPage");
+            SetRootPage.setRoot("loginPage");
         });
     }
 }

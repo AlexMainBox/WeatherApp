@@ -11,5 +11,6 @@ public class LoaderFXML {
     public static Parent loadFXML(String fxml) throws IOException {
             FXMLLoader fxmlLoader = new FXMLLoader(WeatherApp.class.getResource(fxml + ".fxml"));
             return fxmlLoader.load();
+
     }
 }
