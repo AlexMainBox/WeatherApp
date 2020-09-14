@@ -10,10 +10,7 @@ public class LoginPageController {
     private PasswordField passwordTextField;
 
     @FXML
-    private Button singUpButton;
-
-    @FXML
-    private Button loginButton;
+    private Button singUpButton, loginButton;
 
     @FXML
     private CheckBox checkBox;

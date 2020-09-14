@@ -7,28 +7,19 @@ import javafx.scene.control.*;
 public class RegistrationPageController {
 
     @FXML
-    private TextField nameField;
-
-    @FXML
-    private RadioButton mailRadioButton;
+    private TextField nameField, emailField;
 
     @FXML
     private ToggleGroup gender;
 
     @FXML
-    private RadioButton femaleRadioButton;
+    private RadioButton femaleRadioButton, mailRadioButton;
 
     @FXML
     private PasswordField passwordField;
 
     @FXML
-    private TextField emailField;
-
-    @FXML
-    private Button singUpButton;
-
-    @FXML
-    private Button loginButton;
+    private Button loginButton, singUpButton;
 
     @FXML
     private void initialize() {
