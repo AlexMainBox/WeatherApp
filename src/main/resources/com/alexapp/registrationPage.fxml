@@ -12,7 +12,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0"
             prefWidth="747.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/10.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alexapp.Controllers.RegistrationPageController">
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alexapp.controllers.RegistrationPageController">
     <children>
         <TextField fx:id="nameField" layoutX="201.0" layoutY="146.0" prefHeight="40.0" prefWidth="326.0"
                    promptText="Enter your name"/>

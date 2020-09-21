@@ -1,6 +1,6 @@
 package com.alexapp;
 
-import com.alexapp.Utils.SceneBuilder;
+import com.alexapp.utils.SceneBuilder;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -14,7 +14,6 @@ public class WeatherApp extends Application {
 
     @Override
     public void start(Stage stage) {
-
         stage.setTitle("Weather App");
         stage.setResizable(false);
         stage.setScene(scene);

@@ -1,6 +1,6 @@
-package com.alexapp.Controllers;
+package com.alexapp.controllers;
 
-import com.alexapp.Utils.SetRootPage;
+import com.alexapp.utils.SetRootPage;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 

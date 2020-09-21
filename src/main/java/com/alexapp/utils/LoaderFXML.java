@@ -1,4 +1,4 @@
-package com.alexapp.Utils;
+package com.alexapp.utils;
 
 import com.alexapp.WeatherApp;
 import javafx.fxml.FXMLLoader;
@@ -9,7 +9,7 @@ import java.io.IOException;
 public class LoaderFXML {
 
     static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(WeatherApp.class.getResource(fxml + ".fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(WeatherApp.class.getResource( fxml + ".fxml"));
         return fxmlLoader.load();
 
     }

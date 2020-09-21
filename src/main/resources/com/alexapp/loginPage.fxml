@@ -12,7 +12,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0"
             prefWidth="747.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/10.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alexapp.Controllers.LoginPageController">
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alexapp.controllers.LoginPageController">
     <children>
         <PasswordField fx:id="passwordTextField" layoutX="207.0" layoutY="271.0" prefHeight="42.0" prefWidth="347.0"
                        promptText="Enter your password">

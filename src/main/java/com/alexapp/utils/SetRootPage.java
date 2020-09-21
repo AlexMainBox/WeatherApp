@@ -1,4 +1,4 @@
-package com.alexapp.Utils;
+package com.alexapp.utils;
 
 import java.io.IOException;
 

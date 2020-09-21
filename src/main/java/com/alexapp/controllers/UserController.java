@@ -1,6 +1,6 @@
-package com.alexapp.Controllers;
+package com.alexapp.controllers;
 
-import com.alexapp.Utils.ParserPages;
+import com.alexapp.utils.ParserPages;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -18,7 +18,7 @@ public class UserController {
     private Button okButton;
 
     @FXML
-    private Text minDegreesField, nowDegreesField, maxDegreesField,errorField, infoText;
+    private Text minDegreesField, nowDegreesField, maxDegreesField, errorField, infoText;
 
     @FXML
     private Label cityLabel;
@@ -48,7 +48,7 @@ public class UserController {
 
             } catch (NullPointerException | IOException e) {
                 dateReset();
-                errorField.setText("Error: City isn not correct,please enter the city!");
+                errorField.setText("Error: City is not correct, please enter the city!");
                 System.out.println("Please enter the city!");
 
             }
