@@ -13,47 +13,47 @@
     <children>
         <AnchorPane layoutY="114.0" prefHeight="369.0" prefWidth="747.0" style="-fx-background-color: #07c1f5;">
             <children>
-                <TextField fx:id="cityTextField" layoutX="219.0" layoutY="14.0" prefHeight="44.0" prefWidth="309.0" promptText="Enter yor city" style="-fx-background-color: #fff;">
+                <TextField fx:id="cityTextField" layoutX="219.0" layoutY="29.0" prefHeight="44.0" prefWidth="309.0" promptText="Enter yor city" style="-fx-background-color: #fff;">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </TextField>
-            <Button fx:id="okButton" layoutX="548.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="56.0" style="-fx-background-color: #23477d;" text="Ok" textFill="#07c1f5">
+            <Button fx:id="okButton" layoutX="547.0" layoutY="29.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="56.0" style="-fx-background-color: #23477d;" text="Ok" textFill="#07c1f5">
                <font>
                   <Font size="17.0" />
                </font>
             </Button>
-            <Label layoutX="95.0" layoutY="194.0" prefHeight="44.0" prefWidth="133.0" text="Max Degrees:">
+            <Label layoutX="95.0" layoutY="204.0" prefHeight="44.0" prefWidth="133.0" text="Max Degrees:">
                <font>
                   <Font name="DejaVu Sans Bold" size="17.0" />
                </font>
             </Label>
-            <Label layoutX="95.0" layoutY="238.0" prefHeight="44.0" prefWidth="133.0" text="Min Degrees:">
+            <Label layoutX="95.0" layoutY="248.0" prefHeight="44.0" prefWidth="133.0" text="Min Degrees:">
                <font>
                   <Font name="DejaVu Sans Bold" size="17.0" />
                </font>
             </Label>
-            <Text fx:id="maxDegreesField" fill="#a11717" layoutX="236.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="485.7294833958149">
+            <Text fx:id="maxDegreesField" fill="#a11717" layoutX="247.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="485.7294833958149">
                <font>
                   <Font size="17.0" />
                </font>
             </Text>
-            <Text fx:id="minDegreesField" fill="#0c12bc" layoutX="236.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="485.7294921875">
+            <Text fx:id="minDegreesField" fill="#0c12bc" layoutX="247.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="485.7294921875">
                <font>
                   <Font size="17.0" />
                </font>
             </Text>
-            <Label fx:id="cityLabel" alignment="CENTER" layoutY="14.0" prefHeight="44.0" prefWidth="168.0" textFill="#1329ba">
+            <Label fx:id="cityLabel" alignment="CENTER" layoutX="11.0" layoutY="29.0" prefHeight="44.0" prefWidth="168.0" textFill="#1329ba">
                <font>
                   <Font name="DejaVu Sans Bold" size="20.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="290.0" layoutY="65.0" prefHeight="37.0" prefWidth="168.0" text="Weather Info" textFill="#544c21">
+            <Label alignment="CENTER" layoutX="290.0" layoutY="80.0" prefHeight="37.0" prefWidth="168.0" text="Weather Info" textFill="#544c21">
                <font>
-                  <Font name="DejaVu Sans Condensed Bold" size="15.0" />
+                  <Font name="DejaVu Sans Condensed Bold" size="19.0" />
                </font>
             </Label>
-            <Text fx:id="infoText" fill="#666b9a" layoutX="76.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="595.7294921875">
+            <Text fx:id="infoText" fill="#666b9a" layoutX="82.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="595.7294921875">
                <font>
                   <Font name="FreeMono Bold" size="15.0" />
                </font>
@@ -63,12 +63,12 @@
                   <Font name="FreeMono Bold" size="20.0" />
                </font>
             </Text>
-            <Label layoutX="94.0" layoutY="164.0" text="Now Degrees:">
+            <Label layoutX="95.0" layoutY="174.0" text="Now Degrees:">
                <font>
                   <Font name="DejaVu Sans Bold" size="17.0" />
                </font>
             </Label>
-            <Text fx:id="nowDegreesField" fill="#0c12bc" layoutX="236.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="485.7294921875">
+            <Text fx:id="nowDegreesField" fill="#0c12bc" layoutX="247.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="485.7294921875">
                <font>
                   <Font size="17.0" />
                </font>

@@ -1,5 +1,6 @@
 module com.alexapp {
     exports com.alexapp;
+
     requires javafx.controls;
     requires javafx.fxml;
     requires jsoup;

@@ -9,9 +9,9 @@ public class SessionFactoryDB {
     private static final SessionFactory session = sessionFactory();
 
     private static SessionFactory sessionFactory() {
+
         try {
             return new Configuration().configure().buildSessionFactory();
-
         } catch (Throwable e) {
             System.out.println("SessionFactory creation failed");
             throw new ExceptionInInitializerError(e);

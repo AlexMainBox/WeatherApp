@@ -1,6 +1,7 @@
 package com.alexapp.utils;
 
 import javafx.scene.Scene;
+
 import java.io.IOException;
 
 public class SceneBuilder {

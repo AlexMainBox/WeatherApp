@@ -1,12 +1,10 @@
 package com.alexapp.dao;
 
-import com.alexapp.entity.User;
+import java.sql.SQLException;
 
 public interface UserDAO {
 
-    void addUser(String name, String password, String email);
+    boolean addUser(String name, String password, String email) throws SQLException;
 
-    int updateUser(User user);
-
-
+    boolean logInUser(String email, String password) throws SQLException;
 }
