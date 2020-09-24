@@ -1,4 +1,4 @@
 # Project name - Weather App
 # Maven project
-# JavaFX + soup + hibernate + jUnit
+# JavaFX + jsoup + hibernate + jUnit
 # H2database +SQL + SceneBuilder
