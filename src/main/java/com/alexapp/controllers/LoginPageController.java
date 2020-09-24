@@ -1,6 +1,6 @@
 package com.alexapp.controllers;
 
-import com.alexapp.service.PoolService;
+import com.alexapp.service.UserPoolService;
 import com.alexapp.utils.SetRootPage;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -24,7 +24,7 @@ public class LoginPageController {
 
     @FXML
     void initialize() {
-        PoolService poolService = new PoolService();
+        UserPoolService userPoolService = new UserPoolService();
 
         //Changing root scene on "registrationPage", when you click  "singUpButton".
         singUpButton.setOnAction(actionEvent ->
@@ -32,9 +32,9 @@ public class LoginPageController {
 
         //Changing root scene on "userPage", when you click  "loginButton".
         loginButton.setOnAction(actionEvent -> {
-            if (poolService.logInUser(emailTextField.getText(), passwordTextField.getText())) {
+            if (userPoolService.logInUser(emailTextField.getText(), passwordTextField.getText())) {
                 SetRootPage.setRoot("userPage");
-                poolService.shutdownSession();
+                userPoolService.shutdownSession();
             } else textInfo.setText("Email or password not correct! Please, try again.");
         });
     }

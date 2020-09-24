@@ -11,9 +11,9 @@ public class ParserPages {
     private static Document page;
 
     //Take URL and add input city
-    public static void setPage(String city) throws IOException {
+    public static Document setPage(String city) throws IOException {
         String url = "https://www.euronews.com/weather/europe/ukraine/" + city;
-        page = Jsoup.parse(new URL(url), 3000);
+        return page = Jsoup.parse(new URL(url), 3000);
     }
 
     // textInfo field on user page

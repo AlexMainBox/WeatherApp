@@ -10,37 +10,36 @@ import org.hibernate.query.Query;
 import javax.persistence.NoResultException;
 
 // DB Service class, layer between controller and database!
-public class PoolService implements UserDAO {
+public class UserPoolService implements UserDAO {
 
     private final Session session = SessionFactoryDB.getSession().openSession();
-    private Transaction tx;
+    private Transaction transaction;
 
     @Override
     public boolean addUser(String login, String password, String email) {
         boolean statusRegistration = false;
-        if (tx == null) tx = session.beginTransaction();
-
+        if (transaction == null) transaction = session.beginTransaction();
 
         try {
             User user = new User();
             user.setLogin(login);
             user.setPassword(password);
             user.setEmail(email);
-            System.out.println(user.toString());
             session.save(user);
-            tx.commit();
+            transaction.commit();
             statusRegistration = true;
 
         } catch (ConstraintViolationException e) {
-            tx.setRollbackOnly();
+            transaction.setRollbackOnly();
         }
         return statusRegistration;
     }
 
+    // Method selects password by user email and compares him, if all ok - return true. If not - false.
+    // If there are no matches in the database, return authorizationControl = false. Ignored DB exception - NoResultException.
     @Override
     public boolean logInUser(String email, String password) {
         boolean authorizationControl = false;
-        //if (transaction == null) session.beginTransaction();
         String getUserPassword = "SELECT password FROM User WHERE email = '" + email + "'";
         try {
             Query query = session.createNativeQuery(getUserPassword);
@@ -48,7 +47,6 @@ public class PoolService implements UserDAO {
             if (password.equals(passwordUser)) authorizationControl = true;
 
         } catch (NoResultException ignore) {
-
         }
         return authorizationControl;
     }

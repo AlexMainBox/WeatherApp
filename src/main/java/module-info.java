@@ -13,7 +13,6 @@ module com.alexapp {
     requires java.xml.bind;
     requires com.sun.xml.bind;
 
-
     opens com.alexapp to com.fasterxml.classmate;
     opens com.alexapp.dao to java.sql;
     opens com.alexapp.controllers to javafx.fxml;

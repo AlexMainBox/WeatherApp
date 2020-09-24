@@ -4,7 +4,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 // Create SessionFactory and return session!
-public class SessionFactoryDB {
+class SessionFactoryDB {
 
     private static final SessionFactory session = sessionFactory();
 
