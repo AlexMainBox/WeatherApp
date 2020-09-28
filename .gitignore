@@ -1,6 +1,7 @@
 .target/
 .idea
 *.iml
+*.swp
 
 # Project exclude paths
 /target/
